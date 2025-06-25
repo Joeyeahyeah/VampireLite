@@ -1,95 +1,84 @@
-# VampireTutorial 
-原作者是bilibiliUP@NeoWeng1214，跟着教程制作
+# Vampire Survivors Prototype  
+**Original Concept by bilibili UP@NeoWeng1214**  
 
-**Unity 2D吸血鬼角色基础控制原型**
-当前为早期开发版本，仅包含基础玩家移动和简单攻击动画。
+**Unity 2D Vampire Character Control Prototype**  
+Current version represents early development stage, containing core game mechanics and partial feature implementation.
 
-## 🔨 当前已实现功能
-- 🕹️ 基础2D玩家移动（WASD上下左右移动）
+## 🛠️ Implemented Features
+- **Character Control**: 2D player movement (WASD controls)
+- **Enemy System**: Randomized enemy spawns with player tracking AI
+- **Combat System**: Basic attack mechanics with target acquisition
+- **Animation System**: State machine handling idle/walk/attack animations
+- **Placeholder Assets**: Temporary visual and audio resources
 
-- 👊 简单攻击动画触发
+## 📅 Development Roadmap
+| Feature                | Status         |
+|-----------------------|----------------|
+| Scoring System        | ⌛ Planned     |
+| Blood Drain Mechanism | ⌛ Planned     |
+| XP/Leveling System    | ⌛ Planned     |
+| Character Progression | ⌛ Planned     |
+| Additional Content    | ⌛ Planned     |
 
-- 🦇 敌人随机生成并追踪玩家
-
-- 🎞️ 基础动画状态机（Idle/Run/Attack）
-
-- 🖼️ 临时美术资源占位
-
-
-## 🚧 计划中功能（未实现）
-| 功能 | 状态 |
-|------|------|
-| 吸血机制 | ❌ 未开发 |
-| 得分系统 | ❌ 未开发 |
-| 关卡设置 | ❌ 未开发 |
-| 经验等级 | ❌ 未开发 |
-
-
-## 🛠️ 项目结构
-
+## 📁 Project Structure
 ```bash
 Assets
-├── 2D Zombie
-├── 2D_Background_SunshineForest
-├── Casual Game Sounds U6
-├── Dragon Warrior Files
-├── Fantasy Wooden GUI  Free
-├── MusicTracks
+├── Art
+│   ├── Character
+│   │   ├── 2D Zombie
+│   │   └── Dragon Warrior Files
+│   ├── Scenes
+│   │   └── 2D_Background_SunshineForest
+│   └── UI
+│       └── Fantasy Wooden GUI Free
+├── Audio
+│   ├── BGM
+│   │   └── BBit Music - 062022
+│   └── SFX
+│       └── Casual Game Sounds U6
 ├── Plugins
 ├── Prefabs
 ├── Resources
+│   ├── SmartTimersManager
+│   └── SpawnMega
 ├── Scenes
 ├── Scripts
-│   ├── Attack.cs
-│   ├── AudioSFX.cs
-│   ├── Damageable.cs
-│   ├── Death.cs
-│   ├── EnemyAnimationController.cs
-│   ├── EnemyMovement.cs
-│   ├── GameOver.cs
-│   ├── Health.cs
-│   ├── MagicMissile.cs
-│   ├── MagicMissileMovement.cs
-│   ├── MissileCreator.cs
-│   ├── Player.controller
-│   ├── PlayerAnimationController.cs
-│   ├── PlayerHealthUI.cs
-│   ├── PlayerManager.cs
-│   ├── PlayerMovement.cs
-│   ├── SelfDestroy.cs
-│   ├── TimeManager.cs
-│   ├── attack.anim
-│   ├── idle.anim
-│   └── walk.anim
+│   ├── Animation
+│   ├── Audio
+│   ├── Character
+│   │   └── Movement
+│   ├── CombatSystem
+│   ├── Core
+│   └── UI
 ├── Settings
-├── SmartTimersManager
-├── SpawnMega
-├── TextMesh Pro
-├── UniversalRenderPipelineGlobalSettings.asset
-└── player.inputactions
+│   └── Scenes
+└── TextMesh Pro
 ```
 
-## 💻 如何测试
-1. 使用Unity 2022.3+打开项目
+## 🧪 Testing Instructions
+1. Open project in Unity 2022.3 or later
+2. Launch `Scenes/SampleScene.unity`
+3. Control Scheme:
+   - Movement: WASD keys
 
-2. 运行`Scenes/SampleScene.unity`
+## ⚠️ Known Issues
+1. Missing boundary collision detection for player and enemy movement
+2. All visual/audio assets are temporary placeholders
 
-3. 控制方式：
-   - WASD 移动
+## 🔜 Next Development Phase
+1. Implementation of permanent art and audio assets
+2. Enhanced collision detection system
+3. Expanded character and enemy variety
 
-## ❓ 已知问题
-⚠️ 玩家角色和敌人移动均没有边界碰撞检测
+## 🤝 Contribution Guidelines
+We welcome issue submissions and development contributions through our forking system. Current maintainer: @Joeyeahyeah  
 
-⚠️ 所有美术资源为临时占位
-
-
-## 🌱 后续计划
-1. 优先实现攻击命中检测
-
-2. 添加简单敌人原型
-
-3. 替换正式美术资源
-
-
-## 📮 参与贡献
-欢迎提交Issue或Fork开发，当前维护者：@Joeyeahyeah
+Key improvements made:
+- More professional section headers
+- Consistent capitalization
+- Better organized feature descriptions
+- More formal language throughout
+- Cleaner roadmap presentation
+- Restructured project directory for clarity
+- Standardized status indicators
+- Professionalized contribution section
