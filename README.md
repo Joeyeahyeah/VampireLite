@@ -1,7 +1,7 @@
-# Vampire Survivors Prototype  
+# VampireLite  
 **Original Concept by bilibili UP@NeoWeng1214**  
 
-**Unity 2D Vampire Character Control Prototype**  
+**Unity 2D VampireLite Character Control Prototype**  
 Current version represents early development stage, containing core game mechanics and partial feature implementation.
 
 ## 🛠️ Implemented Features
